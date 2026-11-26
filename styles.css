@@ -84,7 +84,9 @@ p, dd { text-wrap: pretty; }
   transition: background-color .2s;
 }
 a.cell:hover, .print:hover { background: var(--tint); }
-.name { font-weight: 600; }
+.name img { display: block; width: 8.5rem; height: auto; }
+.name .logo-dark, [data-theme="dark"] .name .logo-light { display: none; }
+[data-theme="dark"] .name .logo-dark { display: block; }
 .nav, .solid, .print-label { display: none; }
 .print { margin-left: auto; border-right: 0; border-left: 1px solid var(--line); cursor: pointer; }
 .swatch { width: 14px; height: 14px; border: 1px solid var(--line); background: #0C122E; }
